@@ -1,3 +1,4 @@
+ignoreLogs = ['warning-partial-superfluous-prefix']
 baseURL = 'https://www.uiuuyr.top/'
 languageCode = 'zh-cn'
 title = '焚香的博客'
