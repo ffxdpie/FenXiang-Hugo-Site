@@ -1,7 +1,14 @@
 baseURL = 'https://www.uiuuyr.top/'
 languageCode = 'zh-cn'
 title = '焚香的博客'
-theme = 'ananke' # 重要！必须和你 themes 文件夹下的文件夹名一致
+theme = 'PaperMod'
 
+# 1. 旧版 Hugo 配置方式
+[author]
+    name = "Fen Xiang"
+
+# 2. 新版 Hugo/主题 Params 配置方式（很多主题现在读这里）
 [params]
-    description = '分享技术与生活的点滴'
+    author = "Fen Xiang"
+    defaultTheme = "auto"
+    showCodeCopyButtons = true
