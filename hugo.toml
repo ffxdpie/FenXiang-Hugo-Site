@@ -1,0 +1,7 @@
+baseURL = 'https://www.uiuuyr.top/'
+languageCode = 'zh-cn'
+title = '焚香的博客'
+theme = 'ananke' # 重要！必须和你 themes 文件夹下的文件夹名一致
+
+[params]
+    description = '分享技术与生活的点滴'
