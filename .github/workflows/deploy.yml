@@ -21,7 +21,7 @@ jobs:
           extended: true        # 记得我们讨论过的，必须用 Extended 版
 
       - name: Build
-        run: hugo --minify
+        run: hugo --minify --ignoreLogs warning-partial-superfluous-prefix
 
       - name: Deploy to VPS
         uses: easingthemes/ssh-deploy@main
