@@ -8,7 +8,7 @@ categories: ["技术笔记"]
 tags: ["Hugo", "CI/CD", "拉萨救援车间"]
 # 封面图配置（展示窗口的核心）
 cover:
-    image: "https://raw.githubusercontent.com/ffxdpie/blog/main/fx/nginx_sratr.png"
+    image: "images/只狼.jpg"
     alt: "自动化部署流程图"
     relative: false
 # 目录与功能设置
