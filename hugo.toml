@@ -9,3 +9,5 @@ theme = 'PaperMod'
 [params]
     author = "Fen Xiang"
     defaultTheme = "auto"
+[params.assets]
+    favicon = "/favicon.png"
