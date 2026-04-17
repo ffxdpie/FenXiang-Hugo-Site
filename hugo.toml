@@ -1,15 +1,11 @@
 baseURL = 'https://www.uiuuyr.top/'
 languageCode = 'zh-cn'
 title = '焚香的博客'
-theme = 'FixIt'
+theme = 'PaperMod'
+
+[author]
+    name = "Fen Xiang"
 
 [params]
     author = "Fen Xiang"
-    description = "分享技术与生活的点滴"
-
-[menu]
-  [[menu.main]]
-    identifier = "posts"
-    name = "文章"
-    url = "/posts/"
-    weight = 10
+    defaultTheme = "auto"
