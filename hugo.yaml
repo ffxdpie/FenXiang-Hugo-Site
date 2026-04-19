@@ -43,6 +43,9 @@ languages:
         - name: 标签
           url: tags/
           weight: 10
+        - name: "关于"
+          url: "about/" # 确保这里的路径对应你“关于.md”生成的地址
+          weight: 11
 
 outputFormats:
   llms:
@@ -60,13 +63,13 @@ outputs:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  description: "焚香的技术博客 - 记录服务器运维与拉萨生活"
+  description: "焚香的技术博客"
   author: "Fen Xiang"
   # author: ["Me", "You"] # multiple authors
 
   defaultTheme: auto
   # disableThemeToggle: true
-  ShowShareButtons: true
+  ShowShareButtons: false
   ShowReadingTime: true
   # disableSpecial1stPost: true
   displayFullLangName: true
@@ -81,17 +84,21 @@ params:
   images: ["favicon.png"]
 
   profileMode:
-    enabled: false
+    enabled: true
     title: "焚香的小站"
-    imageUrl: "#"
+    imageUrl: "/favicon.png" # 你的头像路径
     imageTitle: my image
     # imageWidth: 120
     # imageHeight: 120
     buttons:
+      - name: "博客"
+        url: posts
       - name: 归档
         url: archives
       - name: 标签
         url: tags
+      - name: "关于"
+        url: about
 
   homeInfoParams:
     Title: "你好，我是焚香 👋"
@@ -114,9 +121,9 @@ params:
   icon: icon.png
   iconHeight: 35
 
-  analytics:
-      google:
-          SiteVerificationTag: "XYZabc"
+  # analytics:
+  #     google:
+  #         SiteVerificationTag: "XYZabc"
 
   assets:
     disableHLJS: true
@@ -174,8 +181,8 @@ markup:
 #     disabled: false
 #     privacyEnhanced: true
 
-services:
-  instagram:
-    disableInlineCSS: true
-  x:
-    disableInlineCSS: true
+# services:
+#   instagram:
+#     disableInlineCSS: true
+#   x:
+#     disableInlineCSS: true

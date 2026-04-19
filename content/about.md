@@ -10,6 +10,7 @@ draft: false
 # 目录设置
 showToc: true
 TocOpen: false
+url: "/about/"
 ---
 
 
