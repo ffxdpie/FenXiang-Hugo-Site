@@ -13,3 +13,4 @@ hugo.yaml.bak
 
 # 本地运行产生的缓存
 .hugo_build.lock
+push.bat
