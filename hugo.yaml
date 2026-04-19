@@ -92,13 +92,13 @@ params:
     # imageHeight: 120
     buttons:
       - name: "博客"
-        url: "/posts"    # 加上斜杠，代表从网站根目录开始找
+        url: "/posts/"    # 加上结尾的斜杠
       - name: "归档"
-        url: "/archives"
+        url: "/archives/"
       - name: "标签"
-        url: "/tags"
+        url: "/tags/"
       - name: "关于"
-        url: "/about"
+        url: "/about/"
 
   homeInfoParams:
     Title: "你好，我是焚香 👋"
