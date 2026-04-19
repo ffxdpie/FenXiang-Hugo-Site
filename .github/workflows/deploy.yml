@@ -1,0 +1,41 @@
+name: Deploy Hugo Site
+
+on:
+  push:
+    branches:
+      - main  # 确保你的主分支名字是 main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # 第一步：拉取代码，必须开启 submodules
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive  # 递归拉取子模块，确保主题文件夹不为空
+          fetch-depth: 0         # 获取完整历史以支持 GitInfo
+
+      # 第二步：安装 Hugo 环境
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: 'latest'
+          extended: true         # 很多主题（如 PaperMod）需要 extended 版本
+
+      # 第三步：构建静态页面
+      - name: Build
+        run: |
+          hugo --minify
+
+      # 第四步：部署到你的 VPS
+      - name: Deploy to VPS
+        uses: easingthemes/ssh-deploy@main
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          REMOTE_HOST: ${{ secrets.SERVER_IP }}
+          REMOTE_USER: fenxiang
+          REMOTE_PORT: 28829
+          TARGET: "/var/www/hugo-blog"
+          SOURCE: "public/"
+          ARGS: "-avz --delete"  # 同步时删除服务器上旧的、多余的文件
