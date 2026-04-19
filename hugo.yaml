@@ -2,7 +2,7 @@
 # contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
 baseURL: "https://www.uiuuyr.top/"
 title: "焚香的小站"
-copyright: "© Fen Xiang"
+copyright: "© Creeper"
 theme: [PaperMod]
 
 enableInlineShortcodes: true
@@ -20,7 +20,7 @@ minify:
 
 pagination:
   disableAliases: false
-  pagerSize: 3
+  pagerSize: 6
 
 # 修改为仅保留中文语言设置
 languages:
@@ -36,16 +36,19 @@ languages:
       main:
         - name: 归档
           url: archives/
-          weight: 5
+          weight: 1
         - name: 搜索
           url: search/
-          weight: 10
+          weight: 6
         - name: 标签
           url: tags/
-          weight: 10
+          weight: 3
+        - name: "分类"
+          url: categories/
+          weight: 4  # 这里的数字决定它在导航栏的左右顺序
         - name: "关于"
           url: "about/" # 确保这里的路径对应你“关于.md”生成的地址
-          weight: 11
+          weight: 5
 
 outputFormats:
   llms:
@@ -64,9 +67,8 @@ outputs:
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   description: "焚香的技术博客"
-  author: "Fen Xiang"
+  author: "Creeper"
   # author: ["Me", "You"] # multiple authors
-
   defaultTheme: auto
   # disableThemeToggle: true
   ShowShareButtons: false
@@ -92,13 +94,15 @@ params:
     # imageHeight: 120
     buttons:
       - name: "博客"
-        url: "/posts/"    # 加上结尾的斜杠
+        url: "/posts/"
       - name: "归档"
         url: "/archives/"
       - name: "标签"
         url: "/tags/"
       - name: "关于"
         url: "/about/"
+      - name: "分类"
+        url: "/categories/"
 
   homeInfoParams:
     Title: "你好，我是焚香 👋"
@@ -143,7 +147,7 @@ params:
   #     hiddenInSingle: true # hide on single page
 
   fuseOpts:
-    isCaseSensitive: false
+    isCaseSensitive: true
     shouldSort: true
     location: 0
     distance: 1000
