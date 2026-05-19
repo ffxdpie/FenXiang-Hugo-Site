@@ -4,8 +4,6 @@ date: 2023-06-15T20:45:48+08:00
 lastmod: 2023-06-15T20:45:48+08:00
 author: "Fen Xiang"
 description: "关于我的自我介绍"
-# 如果这篇文章是置顶的，可以取消下面这一行的注释
-# weight: 1
 draft: false
 # 目录设置
 showToc: true
