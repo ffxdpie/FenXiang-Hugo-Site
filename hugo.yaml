@@ -86,7 +86,7 @@ params:
   images: ["favicon.png"]
 
   profileMode:
-    enabled: true   # false 关闭个人主页模式
+    enabled: false  # false 关闭个人主页模式
     title: "焚香的小站"
     imageUrl: "/favicon.png" # 你的头像路径
     imageTitle: my image
