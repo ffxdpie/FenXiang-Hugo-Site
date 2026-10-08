@@ -12,7 +12,7 @@ buildFuture: false
 buildExpired: false
 enableEmoji: true
 pygmentsUseClasses: true
-mainsections: ["posts"]
+#mainsections: ["posts","tutorial"]
 
 minify:
   disableXML: true
@@ -65,6 +65,7 @@ outputs:
     - llms
 
 params:
+  mainsections: ["posts","tutorial"]
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   description: "焚香的技术博客"
   author: "Creeper"
@@ -86,7 +87,7 @@ params:
   images: ["favicon.png"]
 
   profileMode:
-    enabled: true
+    enabled: true   # false 关闭个人主页模式
     title: "焚香的小站"
     imageUrl: "/favicon.png" # 你的头像路径
     imageTitle: my image
@@ -119,11 +120,11 @@ params:
     Text: "建议修改" # edit text
     appendFilePath: true # to append file path to Edit link
 
-  label:
-  iconSVG: '<svg xmlns="http://www.w3.org/2000/svg" height="25" viewBox="0 -960 960 960" fill="currentColor"><path d="M320-240h320v-80H320v80Zm0-160h320v-80H320v80ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v480q0 33-23.5 56.5T720-80H240Zm280-520v-200H240v640h480v-440H520ZM240-800v200-200 640-640Z"/></svg>'
-  text: "Home"
-  icon: icon.png
-  iconHeight: 35
+  label: # 【关键修改】：修复这里的缩进
+    iconSVG: '<svg xmlns="http://www.w3.org/2000/svg" height="25" viewBox="0 -960 960 960" fill="currentColor"><path d="M320-240h320v-80H320v80Zm0-160h320v-80H320v80ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v480q0 33-23.5 56.5T720-80H240Zm280-520v-200H240v640h480v-440H520ZM240-800v200-200 640-640Z"/></svg>'
+    text: "Home"
+    icon: icon.png
+    iconHeight: 35
 
   # analytics:
   #     google:
