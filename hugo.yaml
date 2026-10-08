@@ -34,6 +34,9 @@ languages:
       series: series
     menu:
       main:
+        - name: 教程
+          url: tutorial/
+          weight: 0
         - name: 归档
           url: archives/
           weight: 1
