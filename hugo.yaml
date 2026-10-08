@@ -12,7 +12,7 @@ buildFuture: false
 buildExpired: false
 enableEmoji: true
 pygmentsUseClasses: true
-#mainsections: ["posts","tutorial"]
+mainsections: ["posts","tutorial"]
 
 minify:
   disableXML: true
@@ -65,7 +65,6 @@ outputs:
     - llms
 
 params:
-  mainsections: ["posts","tutorial"]
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   description: "焚香的技术博客"
   author: "Creeper"
