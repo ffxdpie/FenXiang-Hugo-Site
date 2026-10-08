@@ -1,28 +1,27 @@
-+++
-title = '{{ replace .File.ContentBaseName "-" " " | title }}'
-date = '{{ .Date }}'
-draft = true
-description = '这是一篇新教程'
-showToc = true
-TocOpen = true 
-weight = 1
-
-# 分类和标签
-categories = ['教程']
-tags = ['新手入门']
-
-# 教程特有：系列名称（如果这篇教程是某个系列的一部分，填入系列名）
-series = ['Hugo 建站指南']
-
-[cover]
-  image = ''
-  alt = '教程封面'
-  relative = false
-+++
+---
+title: "{{ replace .File.ContentBaseName `-` ` ` | title }}"
+date: {{ .Date }}
+lastmod: {{ .Date }}
+author: "Fen Xiang"
+description: "这是一篇新教程"
+showToc: true
+TocOpen: true
+draft: true #发布时变为false
+hidemeta: false
+comments: false
+categories:
+  - "教程"
+tags:
+  - "新手入门"
+cover:
+  image: "https://raw.githubusercontent.com/ffxdpie/blog/main/fx/default.jpg"
+  alt: "教程封面"
+  relative: false
+searchHidden: false
+---
 
 ## 学习目标
 - 目标 1
-- 目标 2
 
 ## 准备工作
 - 
